@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/changes/create-roles-table.yaml
+  - include:
+      file: db/changelog/changes/create-users-table.yaml
+  - include:
+      file: db/changelog/changes/create-users_roles-table.yaml
+  - include:
+      file: db/changelog/changes/create-orders-table.yaml
+  - include:
+      file: db/changelog/changes/create-components-table.yaml
+  - include:
+      file: db/changelog/changes/insert-roles.yaml
+  - include:
+      file: db/changelog/changes/insert-users.yaml
+  - include:
+      file: db/changelog/changes/insert-admin.yaml

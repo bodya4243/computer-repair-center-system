@@ -1,0 +1,32 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-users
+      author: bodya4243
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: id
+                  value: 1
+              - column:
+                  name: email
+                  value: "bill@example.com"
+              - column:
+                  name: first_name
+                  value: "bill"
+              - column:
+                  name: last_name
+                  value: "Billson"
+              - column:
+                  name: is_deleted
+                  valueNumeric: 0
+              - column:
+                  name: password
+                  value: "$2a$10$toOnd71kzhB/d0y74CJfL.V5ZO7Fd.GsZB8cCHMvcp6J7FaFPD64W"
+              - column:
+                  name: repeat_password
+                  value: "$2a$10$toOnd71kzhB/d0y74CJfL.V5ZO7Fd.GsZB8cCHMvcp6J7FaFPD64W"
+              - column:
+                  name: shipping_address
+                  value: "somewhere"
